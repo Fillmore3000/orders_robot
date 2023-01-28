@@ -1,0 +1,23 @@
+{
+    "Receipt": {
+        "screenshot": ".images\\receipt-screenshot.png",
+        "source": "https://robotsparebinindustries.com/#/robot-order",
+        "strategy": "id",
+        "type": "browser",
+        "value": "receipt"
+    },
+    "legs": {
+        "screenshot": ".images\\legs-screenshot.png",
+        "source": "https://robotsparebinindustries.com/#/robot-order",
+        "strategy": "xpath",
+        "type": "browser",
+        "value": "//label[contains(.,'3. Legs:')]/../input"
+    },
+    "modal": {
+        "screenshot": ".images\\modal-screenshot.png",
+        "source": "https://robotsparebinindustries.com/#/robot-order",
+        "strategy": "css",
+        "type": "browser",
+        "value": ".modal-header"
+    }
+}
