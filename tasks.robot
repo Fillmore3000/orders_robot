@@ -11,7 +11,11 @@ Library             RPA.Excel.Files
 Library             RPA.Tables
 Library             RPA.PDF
 Library             RPA.Archive
-Library             RPA.Robocloud.Secrets
+Library             RPA.Robocorp.Vault
+
+
+*** Variables ***
+${url}      %{RPA_SECRET_FILE}
 
 
 *** Tasks ***
