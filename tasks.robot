@@ -11,7 +11,6 @@ Library             RPA.Excel.Files
 Library             RPA.Tables
 Library             RPA.PDF
 Library             RPA.Archive
-Library             RPA.Robocorp.Vault
 Library             RPA.Robocloud.Secrets
 
 
