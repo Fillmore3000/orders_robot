@@ -14,10 +14,6 @@ Library             RPA.Archive
 Library             RPA.Robocloud.Secrets
 
 
-*** Variables ***
-${url}      %{RPA_SECRET_FILE}
-
-
 *** Tasks ***
 Order robots from RobotSpareBin Industries Inc
     Open the robot order website
