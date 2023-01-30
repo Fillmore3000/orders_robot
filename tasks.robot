@@ -15,6 +15,10 @@ Library             RPA.Robocorp.Vault
 Variables           variables.py
 
 
+*** Variables ***
+${URL}
+
+
 *** Tasks ***
 Order robots from RobotSpareBin Industries Inc
     Open the robot order website
@@ -24,7 +28,6 @@ Order robots from RobotSpareBin Industries Inc
 
 *** Keywords ***
 Open the robot order website
-    Log    ${URL}
     ${secret}=    Get Secret    credentials
     Open Available Browser    ${secret}[url]
     Click Button    OK
