@@ -11,7 +11,8 @@ Library             RPA.Excel.Files
 Library             RPA.Tables
 Library             RPA.PDF
 Library             RPA.Archive
-Library             RPA.Robocloud.Secrets
+Library             RPA.Robocorp.Vault
+Variables           variables.py
 
 
 *** Tasks ***
@@ -23,6 +24,7 @@ Order robots from RobotSpareBin Industries Inc
 
 *** Keywords ***
 Open the robot order website
+    Log    ${URL}
     ${secret}=    Get Secret    credentials
     Open Available Browser    ${secret}[url]
     Click Button    OK
